@@ -23,11 +23,11 @@ Bug.prototype.update = function(dt) {
 	// Describing the Speed for bugs
 	this.x = this.x + this.speed * dt;
 	if (this.x == 0) {
-		this.speed = 100 + Math.floor(Math.random() * 300);
+		this.speed = 100 + Math.floor(Math.random() * 250);
 	}
 	if (this.x > 500) {
 		this.x = 0;
-		this.speed = 100 + Math.floor(Math.random() * 300);
+		this.speed = 100 + Math.floor(Math.random() * 250);
 	}
 	// Discribing a condition to make player to initial position,
 	// after touching the top of the desk or bug
