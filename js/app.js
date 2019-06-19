@@ -95,9 +95,9 @@ Actor.prototype.handleInput = function(key) {
 	} else if (key === 'right' && this.x < 400) {
 		this.x += 100;
 	} else if (key === 'up') {
-		this.y -= 70;
+		this.y -= 83;
 	} else if (key === 'down' && this.y < 380) {
-		this.y += 70;
+		this.y += 83;
 	}
 }
 // This listens for key presses and sends the keys to your
