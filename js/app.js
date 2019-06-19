@@ -31,7 +31,7 @@ Bug.prototype.update = function(dt) {
 	}
 	// Discribing a condition to make player to initial position,
 	// after touching the top of the desk or bug
-	if (player.x < this.x + 80 && player.x + 80 > this.x && player.y < this.y + 80 && player.y + 80 > this.y) {
+	if (player.x < this.x + 70 && player.x + 70 > this.x && player.y < this.y + 70 && player.y + 70 > this.y) {
 		player.x = 200;
 		player.y = 400;
 		// An Alert that he caught by Bugs
