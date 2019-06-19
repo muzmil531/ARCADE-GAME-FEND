@@ -33,7 +33,7 @@ Bug.prototype.update = function(dt) {
 	// after touching the top of the desk or bug
 	if (player.x < this.x + 70 && player.x + 70 > this.x && player.y < this.y + 70 && player.y + 70 > this.y) {
 		player.x = 200;
-		player.y = 400;
+		player.y = 380;
 		// An Alert that he caught by Bugs
 		Swal.fire({
 			title: 'Oops You Caught by BUGS',
@@ -66,7 +66,7 @@ Actor.prototype.update = function(dt) {
 	// playerscore PANNEL
 	if (this.y < 40) {
 		this.x = 200;
-		this.y = 430;
+		this.y = 380;
 		playerscore += 100;
 		points.innerText = "Your playerscore is  " + playerscore; // playerscore pannel on HTML
 		if (playerscore === 1000) {
@@ -95,9 +95,9 @@ Actor.prototype.handleInput = function(key) {
 	} else if (key === 'right' && this.x < 400) {
 		this.x += 100;
 	} else if (key === 'up') {
-		this.y -= 85;
+		this.y -= 80;
 	} else if (key === 'down' && this.y < 380) {
-		this.y += 85;
+		this.y += 80;
 	}
 }
 // This listens for key presses and sends the keys to your
