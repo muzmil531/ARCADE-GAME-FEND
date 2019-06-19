@@ -87,7 +87,7 @@ enemyLocation.map((positionY) => {
 	var enemyItem = new Bug(0, positionY, 150);
 	allEnemies.push(enemyItem);
 });
-let player = new Actor(200, 400); // DESCRIBING THE POSITION OF PLAYER
+let player = new Actor(200,380); // DESCRIBING THE POSITION OF PLAYER
 Actor.prototype.handleInput = function(key) {
 	// conditionising for key moves
 	if (key === 'left' && this.x > 0) {
