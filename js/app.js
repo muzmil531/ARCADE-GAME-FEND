@@ -66,7 +66,7 @@ Actor.prototype.update = function(dt) {
 	// playerscore PANNEL
 	if (this.y < 40) {
 		this.x = 200;
-		this.y = 400;
+		this.y = 430;
 		playerscore += 100;
 		points.innerText = "Your playerscore is  " + playerscore; // playerscore pannel on HTML
 		if (playerscore === 1000) {
